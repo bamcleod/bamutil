@@ -1,3 +1,4 @@
+# This came from github.com/bamcleod/bamutil
 
 from __future__ import absolute_import
 from __future__ import print_function
@@ -7,6 +8,7 @@ from threading import Thread
 from six.moves import zip
 
 """
+
         Add colnum
         Add insert header before, after other header value
         Add add/del header
@@ -416,11 +418,11 @@ class Starbase(object):
             dashes = len([s for s in self.__dashline if re.match('-+' , s.strip())])
             
             words = len([s for s in self.__headline if re.match('\w+', s.strip())])
-            print("Head  ", words,  self.__headline)
-            print("Dashes", dashes, self.__dashline)
+#            print("Head  ", words,  self.__headline)
+#            print("Dashes", dashes, self.__dashline)
             
-        print("Headline", self.__headline)
-        print("Dashline", self.__dashline)
+#        print("Headline", self.__headline)
+#        print("Dashline", self.__dashline)
         i = 0
         self.__indx = {}
         for col in self.__headline :
@@ -430,8 +432,8 @@ class Starbase(object):
             self.__type.append(types[col] if ( col in types ) else deftype)
             i += 1
 
-        print ("Types", types)
-        print ("Types", self.__type)
+#        print ("Types", types)
+#        print ("Types", self.__type)
 
         # Read the data in, converting to types
         #
